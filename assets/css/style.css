@@ -109,6 +109,7 @@ h6 {
 
 #header .logo img {
     max-height: 40px;
+    margin-bottom: -10px;
 }
 
 
@@ -380,7 +381,7 @@ h6 {
 
 #hero {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background-color: rgba(0, 0, 0, 0.8);
     overflow: hidden;
     position: relative;
@@ -425,6 +426,14 @@ h6 {
     margin-bottom: 20px;
     font-size: 28px;
     font-weight: 700;
+}
+
+#hero .carousel h2 span {
+    color: #2bb7e0;
+}
+
+#hero .carousel .logo img {
+    max-height: 45px;
 }
 
 #hero .btn-get-started {
@@ -597,10 +606,10 @@ section {
 --------------------------------------------------------------*/
 
 .breadcrumbs {
-    padding: 15px 0;
-    background: #1bbd36;
+    padding: .4rem 0 0 0;
+    background: #98c21f;
     min-height: 40px;
-    margin-top: 72px;
+    margin-top: 5rem;
 }
 
 .breadcrumbs h2 {
@@ -658,6 +667,7 @@ section {
     padding: 70px 20px 80px 20px;
     transition: all ease-in-out 0.3s;
     background: #fff;
+    cursor: pointer;
 }
 
 .services .icon-box .icon {
@@ -706,80 +716,18 @@ section {
 }
 
 .services .icon-box:hover {
+    background: #47aeff;
     border-color: #fff;
-    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.5);
 }
 
 .services .iconbox-blue i {
     color: #47aeff;
 }
 
-.services .iconbox-blue:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-blue:hover .icon path {
-    fill: #47aeff;
-}
-
-.services .iconbox-orange i {
-    color: #ffa76e;
-}
-
-.services .iconbox-orange:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-orange:hover .icon path {
-    fill: #ffa76e;
-}
-
-.services .iconbox-pink i {
-    color: #e80368;
-}
-
-.services .iconbox-pink:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-pink:hover .icon path {
-    fill: #e80368;
-}
-
-.services .iconbox-yellow i {
-    color: #ffbb2c;
-}
-
-.services .iconbox-yellow:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-yellow:hover .icon path {
-    fill: #ffbb2c;
-}
-
-.services .iconbox-red i {
-    color: #ff5828;
-}
-
-.services .iconbox-red:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-red:hover .icon path {
-    fill: #ff5828;
-}
-
-.services .iconbox-teal i {
-    color: #11dbcf;
-}
-
-.services .iconbox-teal:hover .icon i {
-    color: #fff;
-}
-
-.services .iconbox-teal:hover .icon path {
-    fill: #11dbcf;
+.services .iconbox-hover:hover .icon {
+    transition: 0.01s;
+    color: #98c21f;
 }
 
 
@@ -931,6 +879,10 @@ section {
 # About Us
 --------------------------------------------------------------*/
 
+.about-us {
+    height: 65vh;
+}
+
 .about-us .content h2 {
     font-weight: 700;
     font-size: 42px;
@@ -965,6 +917,18 @@ section {
 
 .about-us .content p:last-child {
     margin-bottom: 0;
+}
+
+.my-header {
+    text-align: center;
+    font-weight: 700;
+    font-size: min(10vw, 100px);
+    line-height: 45px;
+    text-transform: uppercase;
+    padding-top: 5rem;
+    margin-bottom: 20px;
+    padding-bottom: 2.5rem;
+    position: relative;
 }
 
 
@@ -2243,7 +2207,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
     text-decoration: none;
-    color: #fff;
+    color: #2bb7e0;
 }
 
 #footer .footer-newsletter {
@@ -2316,7 +2280,15 @@ section {
 }
 
 #footer .social-links a:hover {
-    background: #1bbd36;
+    background: #2bb7e0;
     color: #fff;
     text-decoration: none;
+}
+
+#myModal {
+    color: black;
+}
+
+#myModal .btn-secondary:hover {
+    background-color: #2bb7e0;
 }
