@@ -42,36 +42,11 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div w3-include-html="header.html"></div>
-        <script>
-            var selector = 'nav-menu li';
-            var url = window.location.href;
-            var target = url.split('/');
-            $(selector).each(function() {
-                if ($(this).find('a').attr('href') === (target[target.length - 1])) {
-                    $(selector).removeClass('active');
-                    $(this).removeClass('active').addClass('active');
-                }
-            });
-        </script>
     </header>
     <!-- End Header -->
 
     <main id="main">
-        <!-- ======= Breadcrumbs ======= -->
-        <section id="breadcrumbs" class="breadcrumbs">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h2>Team</h2>
-                    <ol>
-                        <li><a href="/pages/humanities.html">Humanities</a></li>
-                        <li><a href="/pages/stem.html">S.T.E.M.</a></li>
-                        <li><a href="/pages/coordinators.html">Coordinators</a></li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-        <!-- End Breadcrumbs -->
-
+        <div w3-include-html="/breadcrumbs-teams.html"></div>
         <!-- ======= Our Team Section ======= -->
         <section id="team" class="team section-bg">
             <div class="container">
