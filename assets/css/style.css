@@ -2245,10 +2245,22 @@ section {
     text-decoration: none;
 }
 
+.footer {
+    flex-shrink: 0;
+}
+
 #myModal {
     color: black;
 }
 
 #myModal .btn-secondary:hover {
     background-color: #2bb7e0;
+}
+
+.myBox {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 2rem;
+    height: fit-content;
+    padding: 2rem 1rem;
 }
